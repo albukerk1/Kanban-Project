@@ -76,6 +76,11 @@ Tarefas (Porta: 8090)
 ### Excluir tarefa:
 	•	DELETE /tasks/{id} - Exclui a tarefa correspondente ao id informado.
 
+ ### Filtrar tarefas:
+	•	GET /tasks/filter?prioridade={prioridade} - Filtra tarefas por prioridade.
+ 	•	GET /tasks/filter?dataLimite={aa-mm-dd} - Filtra tarefas por data limite (formato ano-mes-dia, exemplo: 2024-12-30).
+  	•	GET /tasks/filter?prioridade={prioridade}&dataLimite={aa-mm-dd} - Filtra tarefas por prioridade e data limite.
+
 ### Exemplos de Requisições no Postman podem ser encontrados na pasta 'endpoints'.
 
 ## Como Configurar e Executar o Projeto
